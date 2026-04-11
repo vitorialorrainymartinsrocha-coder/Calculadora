@@ -1,0 +1,77 @@
+.Calculadora {
+  text-align: center;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #ffffff;
+  max-width: 320px;
+  margin: 40px auto;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+
+.Calculadora h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin-bottom: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.display input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #dde1e7;
+  border-radius: 8px;
+  font-size: 16px;
+  text-align: right;
+  background: #f9fafb;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 14px;
+  font-size: 15px;
+  background-color: #f1f3f6;
+  color: #2d2d2d;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #e2e6ed;
+}
+
+.btn-equal {
+  background-color: #4a7fc1;
+  color: white;
+}
+
+.btn-equal:hover {
+  background-color: #3a6aaa;
+}
+
+.btn-clear {
+  background-color: #f0605a;
+  color: white;
+  grid-column: span 1;
+}
+
+.btn-clear:hover {
+  background-color: #d94e48;
+}
